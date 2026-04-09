@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing projects, skills, and experience in AI, Robotics, and Web Development.">
+    <meta name="keywords" content="portfolio, developer, AI, robotics, web development">
+    <title>Martin Milad - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%234f46e5'>P</text></svg>">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar" id="navbar">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <span class="logo__text" data-en="Portfolio" data-ar="ملف أعمال">Portfolio</span>
+                </div>
+                
+                <button class="nav__toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav__menu" id="navMenu">
+                    <li class="nav__item"><a href="#home" class="nav__link" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" data-en="About" data-ar="حول">About</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link" data-en="Education" data-ar="التعليم">Education</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link" data-en="Skills" data-ar="المهارات">Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link" data-en="Experience" data-ar="التجربة">Experience</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" data-en="Contact" data-ar="تواصل">Contact</a></li>
+                </ul>
+
+                <div class="nav__controls">
+                    <button class="theme__toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="theme__icon--light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="theme__icon--dark" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    
+                    <button class="lang__toggle" id="langToggle" aria-label="Switch language">
+                        <span class="lang__text" data-en="العربية" data-ar="English">العربية</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <div class="hero__title-wrapper">
+                        <h1 class="hero__title" data-en="Martin Milad" data-ar="مارتن ميلاد">Martin Milad</h1>
+                        <p class="hero__subtitle" data-en="Software Engineer" data-ar="مهندس برمجيات">Software Engineer</p>
+                    </div>
+                    <p class="hero__tagline" data-en="“With a strong foundation in
+software engineering and
+programming, I design and
+develop organized, scalable
+websites that combine clean user
+experience with solid technical
+architecture.”" data-ar="بفضل أساس قوي في هندسة البرمجيات ”
+والبرمجة، أقوم بتصميم وتطوير مواقع إلكترونية
+منظمة وقابلة للتوسع، تجمع بين تجربة مستخدم
+.سلسة وبنية تقنية قوية
+”">Creating innovative solutions through AI, Robotics, and Web Development</p>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary" data-en="View My Work" data-ar="عرض أعمالي">View My Work</a>
+                        <a href="#contact" class="btn btn--secondary" data-en="Get in Touch" data-ar="تواصل معي">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <img 
+                        src="images/profile.jpeg" 
+                        alt="Profile" 
+                        class="hero__profile-image"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section__title" data-en="About Me" data-ar="عني">About Me</h2>
+                
+                <div class="about__content">
+                    <div class="about__image">
+                        <img src="images/profile.jpeg" alt="Profile" class="about__img" onerror="this.style.display='none'">
+                        <div class="about__image-placeholder" style="display: block;">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="90" fill="var(--color-gradient-light)" opacity="0.1"/>
+                                <circle cx="100" cy="60" r="35" fill="var(--color-accent)" opacity="0.2"/>
+                                <ellipse cx="100" cy="130" rx="45" ry="50" fill="var(--color-accent)" opacity="0.15"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="about__text">
+                        <h3 class="about__heading" data-en="Passionate Developer & Innovator" data-ar="مطور وموهوب مبدع">Passionate Developer & Innovator</h3>
+                        <p class="about__description" data-en="I'm a software engineering student driven by one thing: turning complex problems into clean, structured solutions. My journey started with a fascination for logic — how rules become systems, and systems become experiences.
+
+That curiosity led me to build a student record management system in C++, where I learned that good software isn't just functional — it's designed. Scalable architecture, object-oriented thinking, and the discipline of getting things right.
+
+Now I'm expanding into React frontend development, bridging the gap between systems thinking and interactive UI. I want to build things people actually use and feel.  " data-ar="أنا طالب هندسة برمجيات، يحركني شغف واحد: تحويل المشكلات المعقدة إلى حلول منظمة وواضحة. بدأت رحلتي بشغف المنطق - كيف تتحول القواعد إلى أنظمة، والأنظمة إلى تجارب. قادني هذا الفضول إلى بناء نظام لإدارة سجلات الطلاب بلغة C++، حيث تعلمت أن البرمجيات الجيدة ليست مجرد برمجيات وظيفية، بل هي مصممة. بنية قابلة للتوسع، تفكير كائني التوجه، والانضباط في إتقان العمل. الآن، أتوسع في تطوير واجهات المستخدم باستخدام React، لأربط بين التفكير النظمي وواجهات المستخدم التفاعلية. أريد بناء أشياء يستخدمها الناس بالفعل ويتفاعلون معها.">I'm a software engineering student driven by one thing: turning complex problems into clean, structured solutions. My journey started with a fascination for logic — how rules become systems, and systems become experiences. That curiosity led me to build a student record management system in C++, where I learned that good software isn't just functional — it's designed. Scalable architecture, object-oriented thinking, and the discipline of getting things right. Now I'm expanding into React frontend development, bridging the gap between systems thinking and interactive UI. I want to build things people actually use and feel.</p>
+                        
+                        <div class="about__stats">
+                            <div class="stat">
+                                <div class="stat__number" data-en="5+" data-ar="5+">5+</div>
+                                <div class="stat__label" data-en="Projects Completed" data-ar="المشاريع المكتملة">Projects Completed</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat__number" data-en="2+" data-ar="2+">2+</div>
+                                <div class="stat__label" data-en="Years of Learning" data-ar="سنوات من التعلم">Years of Learning</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat__number" data-en="6+" data-ar="6+">6+</div>
+                                <div class="stat__label" data-en="Technologies Used" data-ar="التقنيات المستخدمة">Technologies Used</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education" id="education">
+            <div class="container">
+                <h2 class="section__title" data-en="Education" data-ar="التعليم">Education</h2>
+                
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title" data-en="Bachelor of Engineering" data-ar="بكالوريوس الهندسة">Bachelor of Engineering</h3>
+                                <p class="timeline__date" data-en="2023 - present" data-ar="2023 - present">2023 - present</p>
+                            </div>
+                            <p class="timeline__institution" data-en="Egyptian Chinese University" data-ar="الجامعة المصرية الصينية ">Egyptian Chinese University</p>
+                            <p class="timeline__description" data-en="Studying Software Engineering with a focus on building modern software applications and improving development skills." data-ar="دراسة هندسة البرمجيات مع التركيز على بناء تطبيقات البرمجيات الحديثة وتحسين مهارات التطوير.">Studying Software Engineering with a focus on building modern software applications and improving development skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title"><a href="https://drive.google.com/file/d/1R3MOED8lkagIhOTC_3WX8HqTFKMK21ln/view?usp=sharing" target="_blank" class="certificate-link" data-en="Certification in CCNA" data-ar=" شهادة سيسكو ">Certification in CCNA</a></h3>
+                                <p class="timeline__date" data-en="Jun. 14-Jul. 14 2025" data-ar=" 14 يونيو إلى 14 يوليو 2025">Jun. 14-Jul. 14 2025</p>
+                            </div>
+                            <p class="timeline__institution" data-en="Egyptian Chinese University" data-ar="الجامعة المصرية الصينية ">Egyptian Chinese University</p>
+                            <p class="timeline__description" data-en="Completed foundational CCNA training covering networking basics such as routing, switching, and IP configuration.
+Developed a solid understanding of Cisco network architecture and basic troubleshooting skills." data-ar="أكملتُ دورة تدريبية أساسية في شهادة سيسكو تغطي أساسيات الشبكات مثل التوجيه والتحويل وتكوين بروتوكول الإنترنت (IP). 
+
+اكتسبتُ فهمًا راسخًا لبنية شبكات سيسكو ومهارات أساسية في استكشاف الأخطاء وإصلاحها.">Completed foundational CCNA training covering networking basics such as routing, switching, and IP configuration.
+Developed a solid understanding of Cisco network architecture and basic troubleshooting skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <h3 class="timeline__title"><a href="https://drive.google.com/file/d/1eXU2_mvR0-0KbNA7WB2_DQlu4P45faLa/view?usp=sharing" target="_blank" class="certificate-link" data-en="Sprints x Microsoft Summer Camp - Web Development" data-ar="  معسكر صيفي Sprints x Microsoft – تطوير الويب">Sprints x Microsoft Summer Camp - Web Development</a></h3>
+                                <p class="timeline__date" data-en="Learning workload (40 hrs)" data-ar="عبء العمل التعليمي (40 ساعة)">Learning workload (40 hrs)</p>
+                            </div>
+                            <p class="timeline__institution" data-en="Sprints (in collaboration with Microsoft) " data-ar="Sprints (بالتعاون مع Microsoft)">Sprints (in collaboration with Microsoft)</p>
+                            <p class="timeline__description" data-en="Web development training program covering HTML, CSS, and JavaScript fundamentals.
+Built responsive web projects and gained hands-on development experience.
+Strengthened core frontend and problem-solving skills." data-ar="برنامج تدريب في تطوير الويب يغطي أساسيات HTML و CSS و JavaScript.
+بنيت مشاريع ويب استجابية وكتبت تجربة تطوير عملية.
+عززت المهارات الأساسية في الواجهة الأمامية وحل المشكلات.">Web development training program covering HTML, CSS, and JavaScript fundamentals.
+Built responsive web projects and gained hands-on development experience.
+Strengthened core frontend and problem-solving skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section__title" data-en="Skills" data-ar="المهارات">Skills</h2>
+                
+                <!-- Skills Grid with 4 categories -->
+                <div class="skills__grid">
+                    
+                    <!-- Programming Category -->
+                    <article class="skills__card">
+                        <h3 class="skills__card-title" data-en="Programming" data-ar="البرمجة">Programming</h3>
+                        <ul class="skills__list">
+                            <li data-en="C++" data-ar="سي++">C++</li>
+                            <li data-en="Object-Oriented Programming (OOP)" data-ar="البرمجة الموجهة للكائنات">Object-Oriented Programming (OOP)</li>
+                            <li data-en="Data Structures & Algorithms" data-ar="البيانات والخوارزميات">Data Structures & Algorithms</li>
+                        </ul>
+                    </article>
+
+                    <!-- Web Development Category -->
+                    <article class="skills__card">
+                        <h3 class="skills__card-title" data-en="Web Development" data-ar="تطوير الويب">Web Development</h3>
+                        <ul class="skills__list">
+                            <li data-en="HTML, CSS, JavaScript" data-ar="HTML و CSS و JavaScript">HTML, CSS, JavaScript</li>
+                            <li data-en="TypeScript" data-ar="تايب سكريبت">TypeScript</li>
+                            <li data-en="React" data-ar="ريأكت">React</li>
+                            <li data-en="UI/UX Principles" data-ar="مبادئ التصميم والتجربة">UI/UX Principles</li>
+                            <li data-en="Responsive Design" data-ar="التصميم المتجاوب">Responsive Design</li>
+                        </ul>
+                    </article>
+
+                    <!-- Networking Category -->
+                    <article class="skills__card">
+                        <h3 class="skills__card-title" data-en="Networking" data-ar="الشبكات">Networking</h3>
+                        <ul class="skills__list">
+                            <li data-en="Basic Networking (CCNA)" data-ar="أساسيات الشبكات">Basic Networking (CCNA)</li>
+                            <li data-en="IP Addressing" data-ar="عناوين الإنترنت">IP Addressing</li>
+                            <li data-en="Routing & Switching" data-ar="التوجيه والتحويل">Routing & Switching</li>
+                        </ul>
+                    </article>
+
+                    <!-- Languages Category -->
+                    <article class="skills__card">
+                        <h3 class="skills__card-title" data-en="Languages" data-ar="اللغات">Languages</h3>
+                        <ul class="skills__list">
+                            <li data-en="Arabic – Native" data-ar="العربية - لغة أم">Arabic – Native</li>
+                            <li data-en="English – Very Good" data-ar="الإنجليزية - جيد جداً">English – Very Good</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <h2 class="section__title" data-en="Work Experience" data-ar="الخبرة العملية">Work Experience</h2>
+                
+                <!-- Two-column layout: Text left, Image right -->
+                <div class="experience__layout">
+                    
+                    <!-- LEFT SIDE: Text Content -->
+                    <div class="experience__content-wrapper">
+                        <h3 class="experience__role-title" data-en="React Frontend Track" data-ar="مسار تطوير الواجهة الأمامية باستخدام React ">React Frontend Track</h3>
+                        <p class="experience__company-name" data-en="DEPI-Digital Egypt Pioneers Initiative" data-ar=" مبادرة رواد مصر الرقمية">DEPI-Digital Egypt Pioneers Initiative</p>
+                        <p class="experience__date" data-en="Nov 2025 - Present" data-ar="نوفمبر 2025 - حتى الآن">Nov 2025 - Present</p>
+                        
+                        <p class="experience__description" data-en="Currently studying front-end development technologies including HTML, CSS, JavaScript, TypeScript, Bootstrap, and React.
+Building practical skills in UI/UX design and creating responsive, user-friendly web interfaces.
+Developing soft skills and freelancing fundamentals for real-world project experience." data-ar=" أدرس حاليًا تقنيات تطوير واجهات المستخدم، بما في ذلك HTML وCSS وJavaScript وTypeScript وBootstrap وReact.
+أعمل على بناء مهارات عملية في تصميم واجهات المستخدم وتجربة المستخدم، وإنشاء واجهات ويب متجاوبة وسهلة الاستخدام. كما أطور مهاراتي الشخصية وأكتسب أساسيات العمل الحر لاكتساب خبرة عملية في مشاريع حقيقية.">Currently studying front-end development technologies including HTML, CSS, JavaScript, TypeScript, Bootstrap, and React.
+Building practical skills in UI/UX design and creating responsive, user-friendly web interfaces.
+Developing soft skills and freelancing fundamentals for real-world project experience.</p>
+                        
+                        <ul class="experience__highlights">
+                            <li data-en="Built responsive web pages using HTML, CSS, JavaScript, and Bootstrap with focus on clean UI/UX design." data-ar="قمت ببناء صفحات ويب متجاوبة باستخدام HTML و CSS و JavaScript و Bootstrap مع التركيز على تصميم واجهة المستخدم/تجربة المستخدم النظيفة.">Built responsive web pages using HTML, CSS, JavaScript, and Bootstrap with focus on clean UI/UX design.</li>
+                            <li data-en="Developed interactive components and frontend features using React and TypeScript." data-ar="قمت بتطوير مكونات تفاعلية وميزات واجهة أمامية باستخدام React و TypeScript.">Developed interactive components and frontend features using React and TypeScript.</li>
+                            <li data-en="Practiced problem-solving and freelancing skills through real-world project simulations and exercises." data-ar="    مارست مهارات حل المشكلات والعمل الحر من خلال محاكاة المشاريع الواقعية والتمارين العملية.">Practiced problem-solving and freelancing skills through real-world project simulations and exercises.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- RIGHT SIDE: Image -->
+                    <div class="experience__image-wrapper">
+                        <img src="images/depi.png" alt="Work Experience" class="experience__image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="experience__image-placeholder">
+                            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="400" fill="var(--color-gradient-light)" opacity="0.1"/>
+                                <rect x="50" y="80" width="300" height="240" rx="12" fill="var(--color-accent)" opacity="0.15"/>
+                                <circle cx="200" cy="140" r="40" fill="var(--color-primary)" opacity="0.2"/>
+                                <rect x="100" y="210" width="200" height="80" rx="8" fill="var(--color-accent)" opacity="0.15"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section__title" data-en="Services" data-ar="الخدمات">Services</h2>
+                
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                <path d="M20 3H4C2.9 3 2 3.9 2 5V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3ZM20 19H4V5H20V19ZM20 7H4V5H20V7Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title" data-en="Front-End Web Development" data-ar="تطوير واجهات الويب">Front-End Web Development</h3>
+                        <p class="service-card__description" data-en="Build responsive and modern websites using HTML, CSS, JavaScript, and React with a focus on clean design and user experience." data-ar="بناء مواقع ويب متجاوبة وعصرية باستخدام HTML, CSS, JavaScript, وReact مع التركيز على التصميم النظيف تجربة المستخدم.">Build responsive and modern websites using HTML, CSS, JavaScript, and React with a focus on clean design and user experience.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                <path d="M3 13H5V19H3V13M7 11H9V19H7V11M11 9H13V19H11V9M15 7H17V19H15V7M19 5H21V19H19V5Z"/>
+                                <path d="M2 21H22V23H2V21Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title" data-en="UI/UX Implementation" data-ar="تطوير الواجهات والتجربة">UI/UX Implementation</h3>
+                        <p class="service-card__description" data-en="Transform design ideas into user-friendly interfaces with proper layout, responsiveness, and intuitive user experience principles." data-ar="    حوّل أفكار التصميم إلى واجهات سهلة الاستخدام مع مراعاة التخطيط المناسب والاستجابة السريعة ومبادئ تجربة المستخدم البديهية.">Transform design ideas into user-friendly interfaces with proper layout, responsiveness, and intuitive user experience principles.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                <path d="M9.4 16.6L4.8 12L9.4 7.4L8 6L2 12L8 18L9.4 16.6ZM14.6 16.6L19.2 12L14.6 7.4L16 6L22 12L16 18L14.6 16.6Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title" data-en="React Web Applications" data-ar="تطبيقات الويب باستخدام React ">React Web Applications</h3>
+                        <p class="service-card__description" data-en="Develop interactive front-end applications using React, including dynamic components and smooth user interactions." data-ar="   قم بتطوير تطبيقات واجهة أمامية تفاعلية باستخدام React، بما في ذلك المكونات الديناميكية وتفاعلات المستخدم السلسة.">Develop interactive front-end applications using React, including dynamic components and smooth user interactions.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                <path d="M3 9H21V11H3V9M3 13H21V15H3V13Z"/>
+                                <path d="M2 4H22V6H2V4Z"/>
+                                <path d="M2 18H22V20H2V18Z"/>
+                                <path d="M9 2H15V4H9V2Z"/>
+                                <path d="M9 20H15V22H9V20Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title" data-en="Website Optimization & Fixes" data-ar="تحسين وتصحيح المواقع الإلكترونية">Website Optimization & Fixes</h3>
+                        <p class="service-card__description" data-en="Improve existing websites by fixing layout issues, enhancing responsiveness, and optimizing performance and user experience." data-ar="تحسين المواقع الإلكترونية الحالية من خلال إصلاح مشاكل التصميم وتعزيز الاستجابة وتحسين الأداء وتجربة المستخدم.">Improve existing websites by fixing layout issues, enhancing responsiveness, and optimizing performance and user experience.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                <path d="M2 3H22V19H2V3M2 1H22C23.1 1 24 1.9 24 3V19C24 20.1 23.1 21 22 21H2C0.9 21 0 20.1 0 19V3C0 1.9 0.9 1 2 1Z"/>
+                                <path d="M6 17H8V19H6V17Z"/>
+                                <path d="M10 17H12V19H10V17Z"/>
+                                <path d="M16 19H18V21H16V19Z"/>
+                                <path d="M20 19H22V21H20V19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title" data-en="C++ Desktop Applications" data-ar="تطبيقات سطح المكتب بلغة C++">C++ Desktop Applications</h3>
+                        <p class="service-card__description" data-en="Develop robust and efficient desktop applications using C++ and modern development practices." data-ar="قم بتطوير تطبيقات سطح مكتب قوية وفعالة باستخدام C++ وممارسات التطوير الحديثة.">Develop robust and efficient desktop applications using C++ and modern development practices.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                <path d="M12 4C7.58 4 4 7.58 4 12s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title" data-en="Basic Networking & System Support" data-ar="الشبكات الأساسية ودعم النظام ">Basic Networking & System Support</h3>
+                        <p class="service-card__description" data-en="Provide basic networking setup and troubleshooting support based on CCNA fundamentals, including IP configuration and connectivity issues." data-ar="  تقديم الدعم الأساسي لإعداد الشبكات وحل المشكلات بناءً على أساسيات شهادة CCNA، بما في ذلك تكوين بروتوكول الإنترنت (IP) ومشكلات الاتصال.">Provide basic networking setup and troubleshooting support based on CCNA fundamentals, including IP configuration and connectivity issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section__title" data-en="Featured Projects" data-ar="المشاريع المميزة">Featured Projects</h2>
+                
+                <div class="projects__list">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <h3 class="project-card__title" data-en="Library Management System" data-ar="نظام إدارة المكتبة">Library Management System</h3>
+                        
+                        <p class="project-card__description" data-en="I developed a Library Management System using C++ to simulate real-world library operations and strengthen my understanding of core programming concepts. The system enables users to add, search, borrow, and return books through a simple console-based interface. It is designed with a modular structure, ensuring clean organization and easy scalability." data-ar="  قمتُ بتطوير نظام لإدارة المكتبات باستخدام لغة C++ لمحاكاة عمليات المكتبات الواقعية وتعزيز فهمي لمفاهيم البرمجة الأساسية. يُمكّن النظام المستخدمين من إضافة الكتب والبحث عنها واستعارتها وإعادتها عبر واجهة بسيطة تعمل من سطر الأوامر. وقد صُمم النظام بهيكل معياري، مما يضمن تنظيمًا سلسًا وقابلية للتوسع بسهولة.    ">I developed a Library Management System using C++ to simulate real-world library operations and strengthen my understanding of core programming concepts. The system enables users to add, search, borrow, and return books through a simple console-based interface. It is designed with a modular structure, ensuring clean organization and easy scalability.</p>
+                        
+                        <p class="project-card__description" data-en="The project focuses on implementing fundamental data structures, including a Linked List for managing the book catalog, a Queue (FIFO) for tracking borrowed books, and a Stack (LIFO) for handling returned books. This experience enhanced my skills in object-oriented programming, problem-solving, and building efficient, well-structured software systems." data-ar="يركز المشروع على تنفيذ هياكل البيانات الأساسية، بما في ذلك قائمة مرتبطة لإدارة فهرس الكتب، وطابور (FIFO) لتتبع الكتب المستعارة، ومكدس (LIFO) للتعامل مع الكتب المُعادة. ساعدني هذا التجربة في تحسين مهاراتي في البرمجة كائنية التوجه، وحل المشكلات، وبناء أنظمة برمجية فعالة ومنظمة.">The project focuses on implementing fundamental data structures, including a Linked List for managing the book catalog, a Queue (FIFO) for tracking borrowed books, and a Stack (LIFO) for handling returned books. This experience enhanced my skills in object-oriented programming, problem-solving, and building efficient, well-structured software systems.</p>
+                        
+                        <div class="project-card__techs">
+                            <span class="tech-label" data-en="C++" data-ar="C++">C++</span>
+                            <span class="tech-label" data-en="Object-Oriented Programming" data-ar="برمجة كائنية التوجه">Object-Oriented Programming</span>
+                            <span class="tech-label" data-en="Data Structures" data-ar="هياكل البيانات">Data Structures</span>
+                        </div>
+                        
+                        <div class="project-card__links">
+                            <a href="https://drive.google.com/file/d/18RkJD6H2vgDZZLw7s5G0DJOkr-YOHf4f/view?usp=sharing" class="btn btn--small" data-en="Watch Demo" data-ar="مشاهدة العرض">Watch Demo</a>
+                            <a href="https://github.com/Martin-MIlad-98/Library-Management-System.git" class="btn btn--small btn--secondary" data-en="View Code" data-ar="عرض الكود">View Code</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <h3 class="project-card__title" data-en="Supermarket Management Website" data-ar="موقع إدارة المتجر">Supermarket Management Website</h3>
+                        
+                        <p class="project-card__description" data-en="I developed a Supermarket Management Web Application that digitizes and streamlines daily supermarket operations for both customers and administrators. The system allows users to browse products, manage carts, and complete purchases, while providing admins with full control over inventory, products, users, and orders. It focuses on delivering a smooth, efficient, and user-friendly shopping experience." data-ar=" قمتُ بتطوير تطبيق ويب لإدارة المتاجر الكبرى، يُحوّل العمليات اليومية للمتاجر إلى عمليات رقمية مُبسطة، مُفيدًا بذلك العملاء والمسؤولين على حدٍ سواء. يُمكّن النظام المستخدمين من تصفح المنتجات، وإدارة سلال التسوق، وإتمام عمليات الشراء، بينما يُتيح للمسؤولين تحكمًا كاملًا في المخزون، والمنتجات، والمستخدمين، والطلبات. ويركز النظام على توفير تجربة تسوق سلسة، وفعّالة، وسهلة الاستخدام.">I developed a Supermarket Management Web Application that digitizes and streamlines daily supermarket operations for both customers and administrators. The system allows users to browse products, manage carts, and complete purchases, while providing admins with full control over inventory, products, users, and orders. It focuses on delivering a smooth, efficient, and user-friendly shopping experience.</p>
+                        
+                        <p class="project-card__description" data-en="The project focuses on applying core software engineering concepts, including object-oriented design and system modeling. It incorporates structured components such as users, products, carts, and orders, with clear relationships between them. Additionally, the system was evaluated using techniques like cyclomatic complexity and function point analysis, enhancing my skills in system analysis, problem-solving, and building efficient, well-structured applications." data-ar="يركز المشروع على تطبيق مفاهيم هندسة البرمجيات الأساسية، بما في ذلك التصميم الموجه للكائنات ونمذجة الأنظمة. ويتضمن مكونات هيكلية مثل المستخدمين والمنتجات وسلال التسوق والطلبات، مع وجود علاقات واضحة بينها. بالإضافة إلى ذلك، تم تقييم النظام باستخدام تقنيات مثل تحليل التعقيد الحلقي وتحليل نقاط الوظائف، مما عزز مهاراتي في تحليل الأنظمة وحل المشكلات وبناء تطبيقات فعالة ومنظمة بشكل جيد.">The project focuses on applying core software engineering concepts, including object-oriented design and system modeling. It incorporates structured components such as users, products, carts, and orders, with clear relationships between them. Additionally, the system was evaluated using techniques like cyclomatic complexity and function point analysis, enhancing my skills in system analysis, problem-solving, and building efficient, well-structured applications.</p>
+                        
+                        <div class="project-card__techs">
+                            <span class="tech-label" data-en="HTML" data-ar="HTML">HTML</span>
+                            <span class="tech-label" data-en="CSS" data-ar="CSS">CSS</span>
+                            <span class="tech-label" data-en="JavaScript" data-ar="JavaScript">JavaScript</span>
+                        </div>
+                        
+                        <div class="project-card__links">
+                            <a href="https://drive.google.com/file/d/1_Ho7y3CA9iqOiXYhy57OOvR_QXVCrJ0u/view?usp=sharing" class="btn btn--small" data-en="Watch Demo" data-ar="مشاهدة العرض">Watch Demo</a>
+                            <a href="https://github.com/Martin-MIlad-98/SuperMarket-Website-.git" class="btn btn--small btn--secondary" data-en="View Code" data-ar="عرض الكود">View Code</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <h3 class="project-card__title" data-en="Student Grade System" data-ar="نظام درجات الطلاب">Student Grade System</h3>
+                        
+                        <p class="project-card__description" data-en="I developed a Student Grade Management System using C++ and the Qt Framework, designed to simulate real-world academic operations through a graphical user interface. The system allows users to manage students, professors, courses, and grades in an organized and user-friendly environment. It provides essential functionalities such as adding and managing records, assigning courses, and handling student grades, all within a structured and interactive GUI. The project emphasizes clear separation between interface and logic, ensuring a clean and maintainable design." data-ar="قمتُ بتطوير نظام لإدارة درجات الطلاب باستخدام لغة C++ وإطار عمل Qt، مصمم لمحاكاة العمليات الأكاديمية الواقعية من خلال واجهة مستخدم رسومية. يتيح النظام للمستخدمين إدارة الطلاب والأساتذة والمقررات الدراسية والدرجات في بيئة منظمة وسهلة الاستخدام. يوفر النظام وظائف أساسية مثل إضافة السجلات وإدارتها، وتخصيص المقررات الدراسية، والتعامل مع درجات الطلاب، كل ذلك ضمن واجهة مستخدم رسومية منظمة وتفاعلية. يركز المشروع على الفصل الواضح بين واجهة المستخدم والمنطق، مما يضمن تصميمًا نظيفًا وسهل الصيانة.">I developed a Student Grade Management System using C++ and the Qt Framework, designed to simulate real-world academic operations through a graphical user interface. The system allows users to manage students, professors, courses, and grades in an organized and user-friendly environment. It provides essential functionalities such as adding and managing records, assigning courses, and handling student grades, all within a structured and interactive GUI. The project emphasizes clear separation between interface and logic, ensuring a clean and maintainable design.</p>
+                        
+                        <p class="project-card__description" data-en="The project strongly demonstrates core Object-Oriented Programming principles, including encapsulation, inheritance, abstraction, and polymorphism. It follows a layered architecture consisting of presentation, control, and core logic layers, enhancing scalability and maintainability. By implementing modular components such as Student, Professor, Course, and GradeManager, I strengthened my skills in designing efficient systems, managing complex relationships, and building well-structured, extensible applications." data-ar="  يُجسّد هذا المشروع بوضوح مبادئ البرمجة الكائنية الأساسية، بما في ذلك التغليف، والوراثة، والتجريد، وتعدد الأشكال. ويتبع بنيةً متعددة الطبقات تتألف من طبقات العرض، والتحكم، والمنطق الأساسي، مما يُحسّن قابلية التوسع والصيانة. ومن خلال تطبيق مكونات معيارية مثل الطالب، والأستاذ، والدورة، ومدير الدرجات، عززتُ مهاراتي في تصميم أنظمة فعّالة، وإدارة العلاقات المعقدة، وبناء تطبيقات منظمة وقابلة للتوسيع.">The project strongly demonstrates core Object-Oriented Programming principles, including encapsulation, inheritance, abstraction, and polymorphism. It follows a layered architecture consisting of presentation, control, and core logic layers, enhancing scalability and maintainability. By implementing modular components such as Student, Professor, Course, and GradeManager, I strengthened my skills in designing efficient systems, managing complex relationships, and building well-structured, extensible applications.</p>
+                        
+                        <div class="project-card__techs">
+                            <span class="tech-label" data-en="C++" data-ar="C++">C++</span>
+                            <span class="tech-label" data-en="Qt 6" data-ar="Qt 6">Qt 6</span>
+                            <span class="tech-label" data-en="Qt Creator" data-ar="Qt Creator">Qt Creator</span>
+                        </div>
+                        
+                        <div class="project-card__links">
+                            <a href="https://drive.google.com/file/d/1EFHomb069Pz6hIaG7cZRon5YGpq3EXJo/view?usp=sharing" class="btn btn--small" data-en="Watch Demo" data-ar="مشاهدة العرض">Watch Demo</a>
+                            <a href="https://github.com/Martin-MIlad-98/Student-Grade-System-.git" class="btn btn--small btn--secondary" data-en="View Code" data-ar="عرض الكود">View Code</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section__title" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h2>
+                
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <h3 class="contact__heading" data-en="Let's Connect" data-ar="لنتواصل">Let's Connect</h3>
+                        <p class="contact__subtext" data-en="I'm always interested in hearing about new projects and opportunities." data-ar="أنا مهتم دائماً بسماع المزيد عن المشاريع والفرص الجديدة.">I'm always interested in hearing about new projects and opportunities.</p>
+                        
+                        <div class="contact__social">
+                            <a href="https://www.linkedin.com/in/martin-milad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1。729v20。542C0 23。２２７。７９２ ２４ １。７７１ ２４h２０。４５１C２３。２ ２４ ２４ ２３。２２７ ２４ ２２。２７１V１。７２９C２４ 。７７４ ２３。２ ０ ２２。２２５ ０z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Martin-MIlad-98" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:miladmartin98@gmail.com" class="social-link" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </a>
+                            <a href="tel:+201092709309" class="social-link" aria-label="Phone">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label" data-en="Name" data-ar="الاسم">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label" data-en="Subject" data-ar="الموضوع">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label" data-en="Message" data-ar="الرسالة">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--block" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+                        <p class="form-note" data-en="I'll get back to you as soon as possible." data-ar="سأرد عليك في أقرب وقت ممكن.">I'll get back to you as soon as possible.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="footer__link" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="#about" class="footer__link" data-en="About" data-ar="حول">About</a></li>
+                        <li><a href="#projects" class="footer__link" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                        <li><a href="#contact" class="footer__link" data-en="Contact" data-ar="تواصل">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title" data-en="Social" data-ar="وسائل التواصل">Social</h3>
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/in/martin-milad" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Martin-MIlad-98" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto: miladmartin98@gmail.com" class="footer__social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright" data-en="© 2026 Martin Milad. All Rights Reserved." data-ar="© 2026 [مارتن ميلاد]. جميع الحقوق محفوظة.">© 2026 [Martin Milad]. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
